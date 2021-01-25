@@ -231,11 +231,6 @@
 <!-- End Footer -->
 
 </header>
+<?php  wp_footer(); ?>
 </body>
-<script src="<?php echo get_template_directory_uri() ?>/assets/js/jquery-3.4.1.min.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/assets/js/popper.min.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/assets/js/bootstrap.min.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/assets/js/slick.min.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/assets/js/all.min.js"></script>
-<script src="<?php echo get_template_directory_uri() ?>/assets/js/main.js"></script>
 </html>

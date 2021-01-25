@@ -4,15 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/font-face.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/bootstrap-rtl.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/hover-min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/all.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/slick.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/slick-theme.css" type="text/css">
     <title>Index</title>
+    <?php wp_head(); ?>
 </head>
 <body class="bg-light">
 <!-- Start Header -->

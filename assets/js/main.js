@@ -1,3 +1,4 @@
+var $=jQuery;
 $('.slider22').slick({
   nextArrow:'.next4',
   prevArrow:'.prev4',
