@@ -17,6 +17,7 @@ if ( ! function_exists( 'hamyar_shop_setup' ) ) :
         load_theme_textdomain( 'hamyar', get_template_directory() . '/languages' );
         add_theme_support( 'automatic-feed-links' );
         add_theme_support( 'post-thumbnails' );
+        add_theme_support( 'title-tag' );
 //        register_nav_menus( array(
 //                                'primary'   => __( 'Primary Menu', 'myfirsttheme' ),
 //                                'secondary' => __('Secondary Menu', 'myfirsttheme' )
@@ -54,3 +55,11 @@ function hamyar_shop_add_theme_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'hamyar_shop_add_theme_scripts' );
+
+if (!function_exists('hamyar_shop_html_class_list')){
+    function hamyar_shop_html_class_list(){
+        $array_class_list=apply_filters('hamyar_shop_html_class_list',[]);
+        $class_list=implode(' ',$array_class_list);
+        echo sprintf(' class="%s" ',$class_list);
+    }
+}

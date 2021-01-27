@@ -1,0 +1,14 @@
+add_theme_support()
+get_template_part()
+
+
+
+wp_head()
+wp_footer()
+language_attributes()
+
+bloginfo()
+
+body_class()
+
+wp_body_open()
