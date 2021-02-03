@@ -21,5 +21,5 @@
     <!-- End Header Top -->
 
 <?php get_template_part('template-parts/header/top-navigation') ?>
-
+</header>
     <!-- End Header -->

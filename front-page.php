@@ -1,7 +1,7 @@
 <?php   get_header(); ?>
 
     <!-- Start Main -->
-    <div>
+    <main>
         <div class="container">
             <div class="row my-4">
                 <div class="col-12">
