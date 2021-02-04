@@ -1,3 +1,5 @@
+<!--separate single and archive sidebar-->
+
 <div class="col-12 col-lg-4">
     <div class="card border-0 mt-3 mt-lg-0 recent-comments">
         <div class="card-body pb-2">
