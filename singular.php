@@ -3,11 +3,15 @@
 <main>
     <div class="container my-5">
         
-        <?php get_template_part('template-parts/single/breadcrumb') ?>
+        <?php get_template_part('template-parts/header/breadcrumb') ?>
 
         <div class="row">
             <?php get_template_part('template-parts/single/main-body') ?>
             <?php get_sidebar(); ?>
         </div>
     </div>
+
+</main>
+    <!-- End Main -->
+
 <?php   get_footer();

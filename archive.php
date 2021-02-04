@@ -12,4 +12,8 @@
             </div>
         </div>
     </div>
+
+</main>
+    <!-- End Main -->
+
 <?php   get_footer();

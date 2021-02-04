@@ -555,6 +555,7 @@ opacity: 1;
     font-weight: 300;
     line-height: 2;
     transition: 0.3s;
+    display: block;
 }
 .footer-top a:hover {
 transform: translateX(-18px);

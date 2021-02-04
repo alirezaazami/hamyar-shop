@@ -5,6 +5,9 @@ if (IS_DEVELOPER){
 }else{
     define('HAMYAR_SHOP_VERSION','1.0.0');
 }
+
+require_once get_theme_file_path('inc/sidebar.php');
+
 /**
  * First, let's set the maximum content width based on the theme's design and stylesheet.
  * This will limit the width of all uploaded images and embeds.
