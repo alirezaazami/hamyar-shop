@@ -1,4 +1,0 @@
-widgets_init  action
-dynamic_sidebar
-is_active_sidebar
-register_sidebar

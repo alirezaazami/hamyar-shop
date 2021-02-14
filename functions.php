@@ -5,8 +5,9 @@ if (IS_DEVELOPER){
 }else{
     define('HAMYAR_SHOP_VERSION','1.0.0');
 }
-
+require_once  ABSPATH.'/wp-content/plugins/redux-framework/sample/sample-config.php';
 require_once get_theme_file_path('inc/sidebar.php');
+require_once get_theme_file_path('inc/option_panel.php');
 
 /**
  * First, let's set the maximum content width based on the theme's design and stylesheet.
