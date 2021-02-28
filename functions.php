@@ -23,6 +23,8 @@ if ( ! function_exists( 'hamyar_shop_setup' ) ) :
         add_theme_support( 'automatic-feed-links' );
         add_theme_support( 'post-thumbnails' );
         add_theme_support( 'title-tag' );
+//        add_image_size( 'category-thumb', 300 ); // 300 pixels wide (and unlimited height)
+//        add_image_size( 'homepage-thumb', 220, 180, true ); // (cropped)
 //        register_nav_menus( array(
 //                                'primary'   => __( 'Primary Menu', 'myfirsttheme' ),
 //                                'secondary' => __('Secondary Menu', 'myfirsttheme' )

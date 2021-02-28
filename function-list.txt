@@ -1,18 +1,12 @@
 functions
 ---------------------
-wp_nav_menu
-has_nav_menu
-register_nav_menus
-get_bloginfo
+add_image_size
+get_the_post_thumbnail
 
 hooks
 ----------------------
-init
-nav_menu_link_attributes
-nav_menu_css_class
+
 
 
 plugins
 -----------------------------
-WP Mega Menu
-Max Mega Menu
