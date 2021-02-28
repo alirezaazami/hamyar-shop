@@ -1,12 +1,13 @@
 * {
-    font-family: Vazir !important;
     text-decoration: none !important;
 }
 input::placeholder {
     font-size: 13px;
     font-weight: 300;
 }
-
+body{
+    font-family: Vazir;
+}
 .header-top .search-box input,select,textarea {
     box-shadow: none !important;
     border-radius: 10px !important;
@@ -586,13 +587,14 @@ transform: translateX(-18px);
     font-size: 24px;
     color: #7C7994 !important;
 }
-.breadcrumb1 .breadcrumb-item {
+.breadcrumb1 a ,
+.breadcrumb1 span{
     font-weight: 300;
     font-size: 15px;
     color: #6c757d !important;
     transition: 0.3s;
 }
-.breadcrumb1 .breadcrumb-item:hover {
+.breadcrumb1 a:hover{
     color: #007bff    !important;
 }
 .aboutus img {

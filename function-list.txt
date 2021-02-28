@@ -1,6 +1,18 @@
+functions
+---------------------
 wp_nav_menu
 has_nav_menu
 register_nav_menus
-init hook
-nav_menu_link_attributes hook
-nav_menu_css_class hook
+get_bloginfo
+
+hooks
+----------------------
+init
+nav_menu_link_attributes
+nav_menu_css_class
+
+
+plugins
+-----------------------------
+WP Mega Menu
+Max Mega Menu

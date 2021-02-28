@@ -8,6 +8,7 @@ if (IS_DEVELOPER){
 
 require_once get_theme_file_path('inc/sidebar.php');
 require_once get_theme_file_path('inc/menu.php');
+require_once get_theme_file_path('inc/breadcrumb.php');
 
 /**
  * First, let's set the maximum content width based on the theme's design and stylesheet.
