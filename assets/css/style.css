@@ -1184,3 +1184,17 @@ border-collapse: separate;
 /*#navbar-top .navbar-nav .menu-item a{*/
 /*    padding: .5rem 1rem;*/
 /*}*/
+/* single post style */
+body.single-post .next-post-link a,
+body.single-post .previous-post-link a
+{
+    max-width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    position: relative;
+    top: 7px;
+}
+
+/*end single post style*/
