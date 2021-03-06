@@ -70,3 +70,14 @@ if (!function_exists('hamyar_shop_html_class_list')){
         echo sprintf(' class="%s" ',$class_list);
     }
 }
+
+function hamyar_shop_get_last_category_name($post_id){
+    $categories = get_the_category($post_id );
+    if ( count( $categories ) > 0 ) {
+        $category = (isset( $categories[ 0 ] )) ? $categories[ 0 ] : false;
+        if ( isset( $category->name ) ) {
+            return $category->name;
+        }
+    }
+    return '';
+}

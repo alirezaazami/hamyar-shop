@@ -13,10 +13,8 @@
     <?php endif; ?>
 </div>
 <div class="d-felx justify-content-between align-items-center mb-4">
-    <strong class="d-block"> برچسب ها :
-        <?php the_tags(); ?>
-<!--        <a href="#" class="px-3 py-1 rounded-pill bg-light"> لوازم </a>-->
-<!--        <a href="#" class="px-3 py-1 rounded-pill bg-light"> طراحی </a>-->
+    <strong class="d-block" id="single-post-tag-list">
+        <?php the_tags(null,''); ?>
     </strong>
 </div>
 <?php   comments_template();

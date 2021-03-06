@@ -13,7 +13,8 @@ the_author
 have_posts
 the_post
 the_content
-
+the_tags
+get_the_category
 
 hooks
 ----------------------
