@@ -2,7 +2,7 @@
     <?php if (get_next_post_link()): ?>
     <div class="next-post-link">
         <i class="fas fa-chevron-right align-middle ml-1"></i>
-        <?php next_post_link('%link','next post'); ?>
+        <?php next_post_link('%link',__('next post','hamyar')); ?>
     </div>
     <?php endif; ?>
     <?php if (get_previous_post_link()): ?>
