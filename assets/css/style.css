@@ -1206,4 +1206,26 @@ body.single-post .previous-post-link a
     background-color: #f8f9fa;
 
 }
+.comment-reply-link{
+    float: left;
+    background: gainsboro;
+    padding: 4px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: black;
+}
+.comment-navigation .nav-previous a,
+.comment-navigation .nav-next a
+{
+    font-weight: 300;
+    font-size: 13px;
+    background-color: rgba(102, 102, 102, 0.13);
+    border-radius: 10px;
+    padding: 4px 10px;
+    color: black;
+    float: left;
+}
+.comment-navigation .nav-next a{
+    float: right;
+}
 /*end single post style*/

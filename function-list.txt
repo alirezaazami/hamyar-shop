@@ -15,6 +15,15 @@ the_post
 the_content
 the_tags
 get_the_category
+get_avatar
+get_comment_author
+get_comment_date
+comment_text
+comment_reply_link
+get_comments_number
+wp_list_comments
+paginate_comments_links
+
 
 hooks
 ----------------------

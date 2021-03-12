@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: همیار شاپ\n"
 "POT-Creation-Date: 2021-03-07 23:37+0330\n"
-"PO-Revision-Date: 2021-03-07 20:26+0000\n"
+"PO-Revision-Date: 2021-03-12 21:23+0000\n"
 "Last-Translator: علیرضا اعظمی\n"
 "Language-Team: فارسی\n"
 "Language: fa_IR\n"
@@ -23,6 +23,10 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "X-Loco-Version: 2.5.1; wp-5.6.2"
 
+#: comments.php:55
+msgid "&larr; Older Comments"
+msgstr "کامنت های قدیمی تر &larr; "
+
 #: inc/sidebar.php:9 inc/sidebar.php:20 inc/sidebar.php:31 inc/sidebar.php:42
 msgid "A short description of the sidebar."
 msgstr ""
@@ -30,6 +34,10 @@ msgstr ""
 #. Author of the theme
 msgid "alireza azami"
 msgstr ""
+
+#: comments.php:35
+msgid "comments for post"
+msgstr "دیگاه برای پست "
 
 #: inc/sidebar.php:8
 msgid "footer navigation 1"
@@ -53,6 +61,14 @@ msgstr "سایدبار فوتر موقعیت 4"
 #: inc/menu.php:5
 msgid "Header Menu"
 msgstr ""
+
+#: comments.php:37
+msgid "is sent:"
+msgstr "ارسال شده:"
+
+#: comments.php:56
+msgid "Newer Comments &rarr;"
+msgstr "&rarr; کامنت های جدید تر"
 
 #: template-parts/single/body-footer.php:5
 msgid "next post"
