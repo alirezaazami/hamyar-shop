@@ -23,11 +23,11 @@ comment_reply_link
 get_comments_number
 wp_list_comments
 paginate_comments_links
-
+comment_form
 
 hooks
 ----------------------
-
+comment_form_fields
 
 
 plugins

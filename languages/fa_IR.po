@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: همیار شاپ\n"
 "POT-Creation-Date: 2021-03-07 23:37+0330\n"
-"PO-Revision-Date: 2021-03-12 21:23+0000\n"
+"PO-Revision-Date: 2021-03-15 21:13+0000\n"
 "Last-Translator: علیرضا اعظمی\n"
 "Language-Team: فارسی\n"
 "Language: fa_IR\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "X-Loco-Version: 2.5.1; wp-5.6.2"
 
-#: comments.php:55
+#: comments.php:25
 msgid "&larr; Older Comments"
 msgstr "کامنت های قدیمی تر &larr; "
 
@@ -35,7 +35,7 @@ msgstr ""
 msgid "alireza azami"
 msgstr ""
 
-#: comments.php:35
+#: comments.php:5
 msgid "comments for post"
 msgstr "دیگاه برای پست "
 
@@ -62,11 +62,11 @@ msgstr "سایدبار فوتر موقعیت 4"
 msgid "Header Menu"
 msgstr ""
 
-#: comments.php:37
+#: comments.php:7
 msgid "is sent:"
 msgstr "ارسال شده:"
 
-#: comments.php:56
+#: comments.php:26
 msgid "Newer Comments &rarr;"
 msgstr "&rarr; کامنت های جدید تر"
 
@@ -85,6 +85,16 @@ msgstr ""
 #| msgid "Search Results for... "
 msgid "Search Results for..."
 msgstr "جستجو برای ..."
+
+#: comments.php:81
+msgid "send comment"
+msgstr "ارسال نظر"
+
+#: comments.php:87
+msgid "your email address is private, please fill all input and send."
+msgstr ""
+"نشانی ایمیل شما منتشر نخواهد شد ، لطفا تمام کادرها را با دقت پر کنید و در "
+"نهایت ارسال را بزنید."
 
 #. Name of the theme
 msgid "همیار شاپ"

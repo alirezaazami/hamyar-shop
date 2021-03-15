@@ -1228,4 +1228,31 @@ body.single-post .previous-post-link a
 .comment-navigation .nav-next a{
     float: right;
 }
+.comment-reply-title{
+    font-size: 17px;
+    font-weight: bolder;
+}
+#commentform #submit{
+    color: #fff;
+    background-color: #5BBEFF;
+    border-radius: 15px !important;
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 16px;
+    width: 25%;
+    line-height: 1.5;
+    border: none;
+    padding: 0.25rem 1rem;
+    float: left;
+}
+
+#commentform #submit:hover{
+    color: #5bbeff;
+    background-color: #fff;
+    border: 1px solid #5bbeff;
+}
+
+#commentform #submit:focus{
+    outline: none   ;
+}
 /*end single post style*/

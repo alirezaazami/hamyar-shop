@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: همیار شاپ\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-12 21:22+0000\n"
+"POT-Creation-Date: 2021-03-15 21:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Loco-Version: 2.5.1; wp-5.6.2\n"
 "X-Domain: hamyar"
 
-#: comments.php:55
+#: comments.php:25
 msgid "&larr; Older Comments"
 msgstr ""
 
@@ -28,7 +28,7 @@ msgstr ""
 msgid "alireza azami"
 msgstr ""
 
-#: comments.php:35
+#: comments.php:5
 msgid "comments for post"
 msgstr ""
 
@@ -52,11 +52,11 @@ msgstr ""
 msgid "Header Menu"
 msgstr ""
 
-#: comments.php:37
+#: comments.php:7
 msgid "is sent:"
 msgstr ""
 
-#: comments.php:56
+#: comments.php:26
 msgid "Newer Comments &rarr;"
 msgstr ""
 
@@ -72,6 +72,14 @@ msgstr ""
 
 #: inc/breadcrumb.php:26
 msgid "Search Results for..."
+msgstr ""
+
+#: comments.php:81
+msgid "send comment"
+msgstr ""
+
+#: comments.php:87
+msgid "your email address is private, please fill all input and send."
 msgstr ""
 
 #. Name of the theme
