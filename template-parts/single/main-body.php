@@ -1,4 +1,7 @@
-<div class="col-12 col-lg-8">
+<?php
+$single_page_class= (is_active_sidebar('single-sidebar')) ? ' col-lg-8 ':'';
+?>
+<div class="col-12 <?php echo $single_page_class ?>">
     <div class="card border-0 content-blog">
         <div class="card-body">
             <?php if (have_posts()):

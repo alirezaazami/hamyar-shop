@@ -46,5 +46,16 @@ function hamyar_shop_register_sidebars() {
             'after_title'   => '</p>',
         )
     );
+    register_sidebar(
+        array(
+            'id'            => 'single-sidebar',
+            'name'          => __( 'single sidebar','hamyar' ),
+            'description'   => __( 'this side bar is show in single page','hamyar' ),
+            'before_widget' => '<div class="card-body"><div class="d-flex flex-column">',
+            'after_widget'  => '</div></div>',
+            'before_title'  => '<h6 class="sidebar-title">',
+            'after_title'   => '</h6>',
+        )
+    );
 
 }

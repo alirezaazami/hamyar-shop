@@ -1255,4 +1255,34 @@ body.single-post .previous-post-link a
 #commentform #submit:focus{
     outline: none   ;
 }
+
+#single-sidebar .card-body {
+    border-top: 1px solid #d6dbe0;
+}
+
+#single-sidebar .card-body:first-of-type {
+    border-top: none;
+}
+#single-sidebar .card-body .sidebar-title {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#single-sidebar .card-body ul {
+    padding-right: 17px;
+}
+#single-sidebar .card-body ul li {
+    padding-bottom: 5px;
+}
+#single-sidebar .card-body a {
+    color: #595b76;
+}
+#single-sidebar .card-body a:hover {
+    color: #0062ff;
+}
+#single-sidebar table#wp-calendar {
+    margin: 0 auto;
+}
+#single-sidebar .wp-calendar-nav {
+    margin: 0 auto;
+}
 /*end single post style*/
