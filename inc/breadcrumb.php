@@ -10,7 +10,13 @@ function get_breadcrumb() {
     echo '<a href="'.home_url().'" rel="nofollow" class="breadcrumb-item">'.get_bloginfo('name').'</a>';
     if (is_category() || is_single()) {
         echo "&nbsp;&nbsp;/&nbsp;&nbsp;";
-        the_category(' &bull; ');
+        global $post_id;
+        $category_list=get_the_category($post_id);
+        if (isset($category_list[0])){
+           echo sprintf('<a href="%s" target="_blank">%s</a>',get_category_link($category_list[0]->term_id),$category_list[0]->name);
+        }else{
+            the_category(' &bull; ');
+        }
         if (is_single()) {
             echo "&nbsp;&nbsp;/&nbsp;&nbsp;";
             echo '<span>';

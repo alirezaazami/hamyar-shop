@@ -3,8 +3,7 @@
         <div class="card border-0" style="border-radius: 25px;">
             <div class="card-body py-2 d-flex flex-column flex-lg-row justify-content-between align-items-center">
                 <div class="breadcrumb breadcrumb1 bg-transparent pb-0">
-                    <a href="index.html" class="breadcrumb-item"> فروشگاه اینترنتی همیار مارکت </a>
-                    <a href="#" class="breadcrumb-item"> آرشیو بلاگ </a>
+                    <?php get_breadcrumb(); ?>
                 </div>
                 <div>
                     <ul class="nav pr-0 d-flex align-items-center fliter">
@@ -27,3 +26,4 @@
         </div>
     </div>
 </div>
+

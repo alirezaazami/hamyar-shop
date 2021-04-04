@@ -24,6 +24,8 @@ get_comments_number
 wp_list_comments
 paginate_comments_links
 comment_form
+get_post_time
+get_the_date
 
 hooks
 ----------------------
@@ -32,3 +34,4 @@ comment_form_fields
 
 plugins
 -----------------------------
+Widget Logic

@@ -1,4 +1,7 @@
 <?php
-for($i=1;$i<10;$i++){
-    get_template_part('template-parts/archive/inside-loop');
-}
+
+if (have_posts()):
+    while (have_posts()):the_post();
+        get_template_part('template-parts/archive/inside-loop');
+    endwhile;
+endif;

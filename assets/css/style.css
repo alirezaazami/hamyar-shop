@@ -773,7 +773,11 @@ transform: translateX(-18px);
     color: #3d3d3d;
     font-size: 14px;
     transition: 0.3s;
-    text-align: justify;
+}
+.articles a.title-link {
+    font-weight: 700;
+    word-spacing: -2px;
+    font-size:15px ;
 }
 .articles a:hover {
     color: #5bbeff;
@@ -815,6 +819,8 @@ transform: translateX(-18px);
 .articles .card-img-top {
     overflow: hidden;
     border-radius: 15px !important;
+    min-width: 90px;
+
 }
 .articles .card-img-top img {
     transition: 0.3s;
