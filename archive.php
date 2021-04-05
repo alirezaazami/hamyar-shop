@@ -6,9 +6,7 @@
         <div class="row">
             <?php get_sidebar() ?>
             <div class="col-12 col-lg-8 mb-4">
-                <div class="row">
                     <?php get_template_part('template-parts/archive/loop') ?>
-                </div>
             </div>
         </div>
     </div>

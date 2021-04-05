@@ -1292,3 +1292,26 @@ body.single-post .previous-post-link a
     margin: 0 auto;
 }
 /*end single post style*/
+
+/*<editor-fold desc="pagination">*/
+#pagination .alignleft{
+    float: left;
+}
+#pagination .alignright{
+    float: right;
+}
+
+#pagination .nav-links{
+    margin: 0 auto;
+}
+#pagination .nav-links>*{
+    padding: 3px 10px;
+    /* border: 1px solid gray; */
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 0 1rem #6a728727;
+}
+#pagination .nav-links>*:hover{
+    color: black;
+}
+/*</editor-fold>*/
