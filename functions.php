@@ -82,3 +82,7 @@ function hamyar_shop_get_last_category_name($post_id){
     }
     return '';
 }
+
+function hamyar_shop_archive_active_filter($param){
+    return 'active';
+}

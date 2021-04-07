@@ -26,6 +26,8 @@ paginate_comments_links
 comment_form
 get_post_time
 get_the_date
+add_query_args
+
 
 hooks
 ----------------------

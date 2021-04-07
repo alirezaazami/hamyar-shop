@@ -11,14 +11,25 @@
                             <i class="fas fa-sort-amount-down align-middle"></i>
                             فیلتر بر اساس :
                         </li>
+                        <?php
+                        $active='newest';
+                        if (isset($_GET['orderby'])){
+                            if ($_GET['orderby']==='post_views'){
+                                $active='must_views';
+                            }elseif ($_GET['orderby']==='date' && $_GET['order']==='asc'){
+                                $active='oldest';
+                            }
+                        }
+                        
+                        ?>
                         <li class="nav-item">
-                            <a href="#" class="nav-link px-2"> جدیدترین </a>
+                            <a href="<?php echo add_query_arg(['orderby'=>'date','order'=>'desc']) ?>" class="nav-link px-2 <?php echo ($active==='newest')?'active':'' ?>"> جدیدترین </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link px-2 active"> پربازدیدترین </a>
+                            <a href="<?php echo add_query_arg(['orderby'=>'post_views','order'=>'desc']) ?>" class="nav-link px-2  <?php echo ($active==='must_views')?'active':'' ?>"> پربازدیدترین </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link px-2"> قدیمیترین </a>
+                            <a href="<?php echo add_query_arg(['orderby'=>'date','order'=>'asc']) ?>" class="nav-link px-2 <?php echo ($active==='oldest')?'active':'' ?>"> قدیمیترین </a>
                         </li>
                     </ul>
                 </div>
