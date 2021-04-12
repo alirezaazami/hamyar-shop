@@ -91,49 +91,12 @@
             </div>
             <div class="col-12 col-lg-5">
                 <div class="card border-0 contact-us2 mt-3 mt-lg-0">
-                    <div class="card-body">
+                    <div class="card-body" id="contact-us-form">
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <h5 class="mb-0"> فرم تماس با ما </h5>
                             <small class="text-muted small-contact"> Contact Us </small>
                         </div>
-                        <form class="link-dl shadow-sm mt-3 mt-lg-0">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text bg-white">
-                                        <small class="text-muted"> نام و نام خانوادگی </small>
-                                    </div>
-                                </div>
-                                <input type="text" class="form-control" placeholder="لطفا نام و نام خانوادگی خود را وارد کنید . . . ">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text bg-white">
-                                        <small class="text-muted">پست الکترونیکی </small>
-                                    </div>
-                                </div>
-                                <input type="text" class="form-control" placeholder="لطفا پست الکترونیکی خود را وارد کنید . . . ">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text bg-white">
-                                        <small class="text-muted"> شماره همراه </small>
-                                    </div>
-                                </div>
-                                <input type="text" class="form-control" placeholder="لطفا شماره تلفن همراه خود را وارد کنید . . . ">
-                            </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text bg-white">
-                                        <small class="text-muted"> موضوع </small>
-                                    </div>
-                                </div>
-                                <input type="text" class="form-control" placeholder="لطفا موضوع خود را وارد کنید . . . ">
-                            </div>
-                            <div class="form-group">
-                                <textarea name="textarea" id="subject" class="form-control" cols="30" rows="10" placeholder="متن پیام ..."></textarea>
-                            </div>
-                            <button class="btn mt-4 btn-block"> ارسال پیام </button>
-                        </form>
+                        <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]') ?>
                     </div>
                 </div>
             </div>

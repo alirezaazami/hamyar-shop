@@ -1315,3 +1315,25 @@ body.single-post .previous-post-link a
     color: black;
 }
 /*</editor-fold>*/
+
+#contact-us-form label{
+    font-size: 15px!important;
+    font-weight: normal!important;
+}
+#contact-us-form input{
+    border-radius: 4px;
+    box-shadow: 0 0 0.5rem #6a728727;
+    border: 1px solid gray;
+}
+#contact-us-form .gform_footer .gform_button {
+    display: block;
+    width: calc(100% - 15px);
+    font-size: 18px;
+    background-color: #5bbeff;
+    color: #fff;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: none;
+    text-align: center!important;
+    padding: 6px;
+}

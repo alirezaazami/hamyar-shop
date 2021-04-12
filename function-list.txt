@@ -1,6 +1,7 @@
 functions
 ---------------------
 register_post_type
+do_shortcode
 
 hooks
 ----------------------
@@ -8,3 +9,4 @@ hooks
 
 plugins
 -----------------------------
+gravity form
