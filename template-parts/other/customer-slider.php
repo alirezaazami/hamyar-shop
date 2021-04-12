@@ -1,3 +1,11 @@
+<?php
+$args = array(
+    'post_type'      => 'my_customer',
+    'posts_per_page' => -1,
+);
+$loop = new WP_Query($args);
+if ($loop->post_count>5):
+?>
 <div class="customers my-5 py-5">
     <div class="container">
         <div class="row text-center justify-content-center">
@@ -12,76 +20,21 @@
                             <span class="slickArrow next8"> <i class="fas fa-chevron-right"></i> </span>
                             <span class="slickArrow prev8"> <i class="fas fa-chevron-left"></i> </span>
                             <div class="slider1 d-flex justify-content-between">
-                                <a href="#">
+                                <?php
+
+                                while ( $loop->have_posts() ) {
+                                    $loop->the_post();
+                                    ?>
+                                <span title="<?php the_title() ?>">
                                     <div class="card border-0 brands">
                                         <div class="card-body py-3">
-                                            <img src="<?php echo get_theme_file_uri() ?>/assets/img/Group 641.png" class="img-fluid d-block mx-auto">
+                                            <?php the_post_thumbnail('thumbnail',['class'=>'img-fluid d-block mx-auto']); ?>
                                         </div>
                                     </div>
-                                </a>
-                                <a href="#">
-                                    <div class="card border-0 brands">
-                                        <div class="card-body py-3">
-                                            <img src="<?php echo get_theme_file_uri() ?>/assets/img/Group 641.png" class="img-fluid d-block mx-auto">
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="card border-0 brands">
-                                        <div class="card-body py-3">
-                                            <img src="<?php echo get_theme_file_uri() ?>/assets/img/Group 641.png" class="img-fluid d-block mx-auto">
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="card border-0 brands">
-                                        <div class="card-body py-3">
-                                            <img src="<?php echo get_theme_file_uri() ?>/assets/img/Group 641.png" class="img-fluid d-block mx-auto">
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="card border-0 brands">
-                                        <div class="card-body py-3">
-                                            <img src="<?php echo get_theme_file_uri() ?>/assets/img/Group 641.png" class="img-fluid d-block mx-auto">
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="card border-0 brands">
-                                        <div class="card-body py-3">
-                                            <img src="<?php echo get_theme_file_uri() ?>/assets/img/Group 641.png" class="img-fluid d-block mx-auto">
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="card border-0 brands">
-                                        <div class="card-body py-3">
-                                            <img src="<?php echo get_theme_file_uri() ?>/assets/img/Group 641.png" class="img-fluid d-block mx-auto">
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="card border-0 brands">
-                                        <div class="card-body py-3">
-                                            <img src="<?php echo get_theme_file_uri() ?>/assets/img/Group 641.png" class="img-fluid d-block mx-auto">
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="card border-0 brands">
-                                        <div class="card-body py-3">
-                                            <img src="<?php echo get_theme_file_uri() ?>/assets/img/Group 641.png" class="img-fluid d-block mx-auto">
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="card border-0 brands">
-                                        <div class="card-body py-3">
-                                            <img src="<?php echo get_theme_file_uri() ?>/assets/img/Group 641.png" class="img-fluid d-block mx-auto">
-                                        </div>
-                                    </div>
-                                </a>
+                                </span>
+                                    <?php
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -90,3 +43,4 @@
         </div>
     </div>
 </div>
+<?php   endif;

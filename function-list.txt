@@ -1,39 +1,10 @@
 functions
 ---------------------
-get_previous_post_link
-previous_post_link
-get_next_post_link
-next_post_link
-the_tags
-get_the_ID
-the_title
-the_time
-the_category
-the_author
-have_posts
-the_post
-the_content
-the_tags
-get_the_category
-get_avatar
-get_comment_author
-get_comment_date
-comment_text
-comment_reply_link
-get_comments_number
-wp_list_comments
-paginate_comments_links
-comment_form
-get_post_time
-get_the_date
-add_query_args
-
+register_post_type
 
 hooks
 ----------------------
-comment_form_fields
 
 
 plugins
 -----------------------------
-Widget Logic
