@@ -714,8 +714,8 @@ transform: translateX(-18px);
     opacity: 0.7;
     font-weight: 400;
 }
-.p-contactus {
-    opacity: 0.7;
+.p-contactus p {
+    color: gray;
     font-weight: 300;
     font-size: 15px;
     line-height: 30px;

@@ -11,6 +11,7 @@ require_once get_theme_file_path('inc/menu.php');
 require_once get_theme_file_path('inc/breadcrumb.php');
 require_once get_theme_file_path('inc/comments.php');
 require_once get_theme_file_path('inc/custom_post_type.php');
+require_once get_theme_file_path('inc/meta_box.php');
 
 /**
  * First, let's set the maximum content width based on the theme's design and stylesheet.
@@ -86,4 +87,10 @@ function hamyar_shop_get_last_category_name($post_id){
 
 function hamyar_shop_archive_active_filter($param){
     return 'active';
+}
+
+function hamyar_shop_acf_get_field($selector,$post_id=false,$format=true){
+    if (function_exists('get_field'))
+    return get_field($selector,$post_id,$format);
+    return 'please install acf plugin for using this item';
 }
