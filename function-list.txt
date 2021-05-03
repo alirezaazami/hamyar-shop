@@ -10,3 +10,6 @@ hooks
 plugins
 -----------------------------
 gravity form
+woocommerce product generator
+YITH WooCommerce Wishlist
+Social Sharing Plugin – Sassy Social Share

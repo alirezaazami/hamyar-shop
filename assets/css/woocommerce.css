@@ -215,6 +215,24 @@ a.woocommerce-loop-product__link:hover h2{
     margin: .5em 0 0 .5em;
 }
 
+.yith-wcwl-add-to-wishlist {
+    display: inline-block;
+    position: absolute;
+    z-index: 9;
+    background-color: #e7edfa;;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+span.onsale + .yith-wcwl-add-to-wishlist{
+    margin-top: 50px;
+}
+.yith-wcwl-add-to-wishlist a{
+    padding: 5px 10px;
+    display: inline-block;
+    /*color: white!important;*/
+}
 @media all and (max-width: 500px) {
     .woocommerce-page div.product div.images,
     .woocommerce div.product div.images{
