@@ -1,4 +1,8 @@
-<?php  get_header();    ?>
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly.
+}
+get_header();    ?>
 <!-- Start Main -->
 <main>
     <div class="container my-5">

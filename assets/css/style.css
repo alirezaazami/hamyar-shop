@@ -1104,9 +1104,11 @@ border-radius: 15px !important;
     background-color: #fff;
 }
 
-.product {
+.product>div {
     border-radius: 15px !important;
     box-shadow: 0 0 2rem #6a728727;
+    background: white;
+    margin-bottom:3rem;
 }
 .side-icon li a {
     background-color: #e7edfa;
