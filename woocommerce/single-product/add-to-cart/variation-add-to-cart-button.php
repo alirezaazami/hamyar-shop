@@ -37,7 +37,7 @@ global $product;
 	?>
 
 
-	<button type="submit" class="single_add_to_cart_button button alt btn btn-block py-3 hvr-shutter-out-horizontal"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+	<button type="submit" class="single_add_to_cart_button button alt btn btn-block py-3 hvr-shutter-out-horizontal"><i class="fas fa-shopping-cart"></i> <?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
 
 	<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 

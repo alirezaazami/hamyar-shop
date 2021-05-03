@@ -295,8 +295,8 @@ body{
     z-index: 1;
     transition: 0.3s;
     clip-path: ellipse(275px 177px at 50% 15%);
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
     visibility: hidden;
     opacity: 0;
 }
