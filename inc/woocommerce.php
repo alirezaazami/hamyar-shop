@@ -27,5 +27,5 @@ add_filter('woocommerce_product_tabs',function ($tabs){
 });
 
 function hamyar_shop_other_product_review(){
-    echo hamyar_shop_acf_get_field('review');
+    get_template_part('template-parts/woocommerce/single-product','review');
 }
