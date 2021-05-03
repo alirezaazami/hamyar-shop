@@ -24,19 +24,21 @@ $variations_json = wp_json_encode( $available_variations );
 $variations_attr = function_exists( 'wc_esc_json' ) ? wc_esc_json( $variations_json ) : _wp_specialchars( $variations_json, ENT_QUOTES, 'UTF-8', true );
 
 do_action( 'woocommerce_before_add_to_cart_form' ); ?>
-
+<div class="col-12">
 <form class="variations_form cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data' data-product_id="<?php echo absint( $product->get_id() ); ?>" data-product_variations="<?php echo $variations_attr; // WPCS: XSS ok. ?>">
 	<?php do_action( 'woocommerce_before_variations_form' ); ?>
 
 	<?php if ( empty( $available_variations ) && false !== $available_variations ) : ?>
 		<p class="stock out-of-stock"><?php echo esc_html( apply_filters( 'woocommerce_out_of_stock_message', __( 'This product is currently out of stock and unavailable.', 'woocommerce' ) ) ); ?></p>
 	<?php else : ?>
-		<table class="variations" cellspacing="0">
-			<tbody>
+		<div class="variations" cellspacing="0">
 				<?php foreach ( $attributes as $attribute_name => $options ) : ?>
-					<tr>
-						<td class="label"><label for="<?php echo esc_attr( sanitize_title( $attribute_name ) ); ?>"><?php echo wc_attribute_label( $attribute_name ); // WPCS: XSS ok. ?></label></td>
-						<td class="value">
+						<div class="value colors mb-4">
+                            <label for="<?php echo esc_attr( sanitize_title( $attribute_name ) ); ?>"><?php esc_html_e('select','hamyar'); ?> <?php echo wc_attribute_label( $attribute_name ); // WPCS: XSS ok. ?></label>
+                            <div class="mt-3">
+
+
+                            <!-- /.mt-3 -->
 							<?php
 								wc_dropdown_variation_attribute_options(
 									array(
@@ -47,11 +49,10 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 								);
 								echo end( $attribute_keys ) === $attribute_name ? wp_kses_post( apply_filters( 'woocommerce_reset_variations_link', '<a class="reset_variations" href="#">' . esc_html__( 'Clear', 'woocommerce' ) . '</a>' ) ) : '';
 							?>
-						</td>
-					</tr>
+                            </div>
+						</div>
 				<?php endforeach; ?>
-			</tbody>
-		</table>
+		</div>
 
 		<div class="single_variation_wrap">
 			<?php
@@ -79,6 +80,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 	<?php do_action( 'woocommerce_after_variations_form' ); ?>
 </form>
+</div>
 
 <?php
 do_action( 'woocommerce_after_add_to_cart_form' );

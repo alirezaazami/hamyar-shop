@@ -2,8 +2,104 @@
     margin-bottom:0;
 }
 .entry-summary{
-    padding: 10px 0 0 10px;
+    padding: 10px;
 }
 .entry-summary h1{
     font-size: 1.5rem;
+}
+.woocommerce-page div.product div.images,
+.woocommerce div.product div.images{
+    width: 30%;
+}
+.woocommerce div.product div.summary,
+.woocommerce-page div.product div.summary{
+    width: 66%;
+}
+.product-type-variable  #product_top_price{
+    display: none   ;
+}
+.woocommerce div.product form.cart .variations{
+    width: 50%;
+    float: right;
+}
+.woocommerce div.product form.cart .variations + div{
+    width: 50%;
+    float: left;
+}
+.woocommerce div.product form.cart .reset_variations{
+    display: none!important;
+}
+.woocommerce div.product form.cart .variations label {
+    font-weight: 500;
+    font-size: 18px;
+}
+.woocommerce div.product form.cart .variations select{
+    display: block;
+    width: 80%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.woocommerce div.product form.cart .variations select:focus-visible{
+outline: none;
+}
+.woocommerce div.product .stock{
+    margin-bottom:0;
+}
+.woocommerce div.product p.stock{
+    font-size: initial;
+}
+.single_variation_wrap hr{
+    margin: 10px 0;
+}
+.woocommerce div.product form.cart div.quantity input{
+    display: block;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .175rem .75rem .175rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.woocommerce div.product form.cart .button{
+    background-color: #5dc9ff;
+    color: #fff !important;
+    border-radius: 10px !important;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+@media all and (max-width: 500px) {
+    .woocommerce-page div.product div.images,
+    .woocommerce div.product div.images{
+        width: 100%;
+    }
+    .woocommerce div.product div.summary,
+    .woocommerce-page div.product div.summary{
+        width: 100%
+    }
+    .woocommerce div.product form.cart .variations{
+        width: 100%;
+        float: right;
+    }
+    .woocommerce div.product form.cart .variations + div{
+        width: 100%;
+        float: left;
+    }
 }

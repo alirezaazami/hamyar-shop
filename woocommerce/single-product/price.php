@@ -22,4 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 
 ?>
+<div id="product_top_price" class="col-12">
 <p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></p>
+</div>
