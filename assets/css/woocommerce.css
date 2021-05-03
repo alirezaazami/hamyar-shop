@@ -84,6 +84,45 @@ outline: none;
     overflow: hidden;
     margin-top: 20px;
 }
+.woocommerce div.product .woocommerce-tabs ul.tabs li{
+    border: none;
+    background-color: initial;
+    border-radius: initial;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li a{
+    padding: 1rem;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li:before,
+.woocommerce div.product .woocommerce-tabs ul.tabs li:after{
+content: initial;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active{
+    border-bottom: 1px solid #5bbeff;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active a{
+    color: #5bbeff;
+}
+.woocommerce div.product .woocommerce-tabs .panel{
+    padding: 20px;
+}
+.woocommerce-tabs h2{
+    font-size: 1.2rem;
+}
+.woocommerce table.shop_attributes {
+    border-top: initial;
+    margin-bottom: 1.618em;
+    width: 100%;
+    border-spacing: 11px;
+    border-collapse: separate;
+}
+.woocommerce table.shop_attributes th{
+    font-weight: 500;
+}
+.woocommerce table.shop_attributes td p{
+    padding: 10px;
+    font-style:normal ;
+}
 
 @media all and (max-width: 500px) {
     .woocommerce-page div.product div.images,
