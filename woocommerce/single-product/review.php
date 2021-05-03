@@ -21,28 +21,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 ?>
-<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+<li <?php comment_class('card border-0 bg-light'); ?> id="li-comment-<?php comment_ID(); ?>">
 
-	<div id="comment-<?php comment_ID(); ?>" class="comment_container">
+	<div id="comment-<?php comment_ID(); ?>" class="comment_container card-body">
 
-		<?php
-		/**
-		 * The woocommerce_review_before hook
-		 *
-		 * @hooked woocommerce_review_display_gravatar - 10
-		 */
-		do_action( 'woocommerce_review_before', $comment );
-		?>
+        <?php /**
+         * The woocommerce_review_before_comment_meta hook.
+         *
+         * @hooked woocommerce_review_display_rating - 10
+         */
+        do_action( 'woocommerce_review_before_comment_meta', $comment );
+        ?>
 
-		<div class="comment-text">
-
+		<div class="comment-text d-flex align-items-center">
+            <?php
+            /**
+             * The woocommerce_review_before hook
+             *
+             * @hooked woocommerce_review_display_gravatar - 10
+             */
+            do_action( 'woocommerce_review_before', $comment );
+            ?>
 			<?php
-			/**
-			 * The woocommerce_review_before_comment_meta hook.
-			 *
-			 * @hooked woocommerce_review_display_rating - 10
-			 */
-			do_action( 'woocommerce_review_before_comment_meta', $comment );
+
 
 			/**
 			 * The woocommerce_review_meta hook.
@@ -50,6 +51,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 * @hooked woocommerce_review_display_meta - 10
 			 */
 			do_action( 'woocommerce_review_meta', $comment );
+			?>
+        </div>
+        <div class="mt-3">
+        <!-- /.mt-3 -->
+            <?php
 
 			do_action( 'woocommerce_review_before_comment_text', $comment );
 

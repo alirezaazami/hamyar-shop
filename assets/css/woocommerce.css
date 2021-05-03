@@ -124,6 +124,46 @@ content: initial;
     font-style:normal ;
 }
 
+.woocommerce #reviews #comments ol.commentlist li img.avatar {
+     float: initial;
+     position: relative;
+     top: initial;
+     right: initial;
+     padding: 0px;
+    width: 50px;
+    height: auto;
+    background: #ebe9eb;
+    border: initial;
+    margin: 0;
+    margin-left:20px;
+    border-radius: 50%;
+    box-shadow: none;
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text {
+    margin: initial;
+    border: 0px;
+    border-radius: initial;
+    padding: initial;
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta strong{
+    display: block;
+}
+.woocommerce #reviews #comments ol.commentlist li .comment-text p.meta .woocommerce-review__dash{
+    display: none;
+}
+.woocommerce #review_form #respond p.stars{
+    display: inline-block;
+    margin-right: 10px;
+}
+.woocommerce #review_form #respond .form-submit #submit{
+    color: #fff;
+    background-color: #5BBEFF;
+    border-radius: 15px !important;
+    transition: 0.3s;
+    font-weight: 400;
+    font-size: 16px;
+    width: 25%;
+}
 @media all and (max-width: 500px) {
     .woocommerce-page div.product div.images,
     .woocommerce div.product div.images{
