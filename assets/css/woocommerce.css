@@ -215,6 +215,21 @@ a.woocommerce-loop-product__link:hover h2{
     margin: .5em 0 0 .5em;
 }
 
+.heateor_sss_sharing_container{
+    display: inline-block;
+    position: absolute;
+    z-index: 9;
+    right: 10px;
+    margin-top: 45px;
+}
+
+.heateor_sss_sharing_container .heateor_sss_sharing_ul{
+    padding: 0  ;
+}
+.heateor_sss_sharing_container .heateor_sss_sharing_ul>li:first-of-type{
+    display: none;
+}
+
 .yith-wcwl-add-to-wishlist {
     display: inline-block;
     position: absolute;
@@ -223,16 +238,17 @@ a.woocommerce-loop-product__link:hover h2{
     color: #fff;
     border-radius: 50%;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 90px;
 }
-span.onsale + .yith-wcwl-add-to-wishlist{
-    margin-top: 50px;
-}
+
 .yith-wcwl-add-to-wishlist a{
     padding: 5px 10px;
     display: inline-block;
     /*color: white!important;*/
 }
+
+
+
 @media all and (max-width: 500px) {
     .woocommerce-page div.product div.images,
     .woocommerce div.product div.images{

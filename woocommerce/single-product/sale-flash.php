@@ -29,5 +29,5 @@ global $post, $product;
 	<?php
 endif;
 echo do_shortcode('[yith_wcwl_add_to_wishlist]');
-echo do_shortcode('[Sassy_Social_Share type="floating"]');
+echo do_shortcode('[Sassy_Social_Share]');
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
