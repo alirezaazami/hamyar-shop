@@ -1,3 +1,4 @@
+/*start of single product style*/
 .woocommerce .woocommerce-breadcrumb{
     margin-bottom:0;
 }
@@ -256,8 +257,27 @@ a.woocommerce-loop-product__link:hover h2{
     display: inline-block;
     /*color: white!important;*/
 }
+/*end of single product style*/
 
-
+/*start woocommerce archive page style*/
+.breadcrumb{
+    justify-content: space-between;
+}
+#breadcrumb-filter >*{
+    margin-bottom:0px;
+    margin-right:10px;
+}
+#breadcrumb-filter form select:focus-visible{
+    outline: none;
+}
+.bapf_from{
+    float: left;
+    text-align: center!important;
+}
+.bapf_to{
+    text-align: center!important;
+}
+/*end woocommerce archive page style*/
 
 @media all and (max-width: 500px) {
     .woocommerce-page div.product div.images,

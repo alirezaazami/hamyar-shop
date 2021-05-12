@@ -1264,7 +1264,25 @@ body.single-post .previous-post-link a
 #commentform #submit:focus{
     outline: none   ;
 }
-
+#single-sidebar .card{
+    background: initial;
+}
+#single-sidebar .card>*{
+    border-radius: 15px !important;
+    box-shadow: 0 0 1.5rem #6a728727;
+    margin-bottom:15px;
+    background: white;
+    padding: 0 15px;
+}
+#single-sidebar .card .bapf_head h3{
+    background-color: #F44336;
+    border-radius: 0 0 15px 15px !important;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px 21px;
+    margin-bottom: 25px;
+}
 #single-sidebar .card-body {
     border-top: 1px solid #d6dbe0;
 }
