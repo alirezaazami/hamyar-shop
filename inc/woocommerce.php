@@ -29,3 +29,6 @@ add_filter('woocommerce_product_tabs',function ($tabs){
 function hamyar_shop_other_product_review(){
     get_template_part('template-parts/woocommerce/single-product','review');
 }
+
+remove_action('woocommerce_before_shop_loop','woocommerce_output_all_notices',10);
+add_action('hamyar_shop_header_notice','woocommerce_output_all_notices',10);

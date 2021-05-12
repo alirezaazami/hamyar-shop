@@ -4,7 +4,7 @@
 get_header(); ?>
 <!-- Start Main -->
 <main>
-    <div class="container my-5">
+    <div class="container">
         <?php get_template_part('template-parts/header/breadcrumb') ?>
         <div class="row">
 

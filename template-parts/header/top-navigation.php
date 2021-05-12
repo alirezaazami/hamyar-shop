@@ -3,7 +3,7 @@
 
 
 
-<div class="header-bottom bg-white">
+<div class="header-bottom bg-white mb-5">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-top">

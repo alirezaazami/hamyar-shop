@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 <main>
-	<div class="container my-5">
+	<div class="container">
 		<div class="row">
 			<div class="col-12 mb-5">
 				<div class="card border-0" style="border-radius: 25px;">

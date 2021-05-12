@@ -18,7 +18,14 @@
 defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
-
+?>
+    <main>
+    <div class="container">
+    <div class="row">
+    <div class="col-12 mb-5">
+    <div class="card border-0" style="border-radius: 25px;">
+    <div class="breadcrumb breadcrumb1 bg-transparent pb-0">
+<?php
 /**
  * Hook: woocommerce_before_main_content.
  *
@@ -28,7 +35,26 @@ get_header( 'shop' );
  */
 do_action( 'woocommerce_before_main_content' );
 
+/**
+ * Hook: woocommerce_before_shop_loop.
+ *
+ * @hooked woocommerce_result_count - 20
+ * @hooked woocommerce_catalog_ordering - 30
+ */
+do_action( 'woocommerce_before_shop_loop' );
+
 ?>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="row">
+<?php
+$single_page_class= (is_active_sidebar('single-sidebar')) ? ' col-lg-8 ':'';
+?>
+<div class="col-12 <?php echo $single_page_class ?>">
+
 <header class="woocommerce-products-header">
 	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
@@ -47,14 +73,8 @@ do_action( 'woocommerce_before_main_content' );
 <?php
 if ( woocommerce_product_loop() ) {
 
-	/**
-	 * Hook: woocommerce_before_shop_loop.
-	 *
-	 * @hooked woocommerce_output_all_notices - 10
-	 * @hooked woocommerce_result_count - 20
-	 * @hooked woocommerce_catalog_ordering - 30
-	 */
-	do_action( 'woocommerce_before_shop_loop' );
+
+
 
 	woocommerce_product_loop_start();
 
@@ -94,12 +114,19 @@ if ( woocommerce_product_loop() ) {
  * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
  */
 do_action( 'woocommerce_after_main_content' );
-
+?>
+</div>
+    <?php
 /**
  * Hook: woocommerce_sidebar.
  *
  * @hooked woocommerce_get_sidebar - 10
  */
 do_action( 'woocommerce_sidebar' );
+    ?>
 
+    </div>
+    </div>
+    </main>
+<?php
 get_footer( 'shop' );

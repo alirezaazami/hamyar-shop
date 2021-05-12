@@ -11,3 +11,17 @@
 <!-- Start Header -->
 
 <?php get_template_part('template-parts/header/site-header');
+?>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <?php
+//           @hooked woocommerce_output_all_notices - 10
+            do_action('hamyar_shop_header_notice');
+            ?>
+        </div>
+        <!-- /.col-12 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->

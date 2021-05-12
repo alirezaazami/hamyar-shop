@@ -2,6 +2,8 @@ functions
 ---------------------
 register_post_type
 do_shortcode
+remove_action
+do_action
 
 hooks
 ----------------------
