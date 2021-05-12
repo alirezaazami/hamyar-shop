@@ -278,6 +278,51 @@ a.woocommerce-loop-product__link:hover h2{
     text-align: center!important;
 }
 /*end woocommerce archive page style*/
+/*start woocommerce cart page style*/
+.woocommerce table.shop_table{
+    border: none;
+}
+.woocommerce table.shop_table a{
+    color: #2f2f2f;
+}
+
+.woocommerce table.shop_table .actions button{
+    border: 1px solid gray;
+    font-size: 14px;
+}
+#coupon_code{
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 150px;
+}
+.woocommerce .quantity .qty {
+    width: 3.631em;
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 40px;
+}
+.woocommerce .quantity .qty:focus-visible {
+    outline: none;
+}
+.woocommerce .quantity .qty::-webkit-outer-spin-button,
+.woocommerce .quantity .qty::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+
+}
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals{
+    width: 250px;
+}
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button{
+    padding: 11px 15px;
+    background: #00b100;
+}
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover{
+    background: #006a00;
+}
+/*end woocommerce cart page style*/
+
 
 @media all and (max-width: 500px) {
     .woocommerce-page div.product div.images,
