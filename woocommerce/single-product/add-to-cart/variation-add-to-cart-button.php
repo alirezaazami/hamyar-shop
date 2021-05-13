@@ -14,13 +14,12 @@ global $product;
 <div class="woocommerce-variation-add-to-cart variations_button">
 	<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
-	<?php
-	do_action( 'woocommerce_before_add_to_cart_quantity' );
-    ?>
+
     <div class="d-flex align-items-center justify-content-between mb-1">
         <small> <?php esc_html_e('select count'); ?>: </small>
         <small>
             <?php
+            do_action( 'woocommerce_before_add_to_cart_quantity' );
             woocommerce_quantity_input(
                 array(
                     'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
@@ -28,13 +27,11 @@ global $product;
                     'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : $product->get_min_purchase_quantity(), // WPCS: CSRF ok, input var ok.
                 )
             );
+            do_action( 'woocommerce_after_add_to_cart_quantity' );
             ?>
+
         </small>
     </div>
-    <?php
-
-	do_action( 'woocommerce_after_add_to_cart_quantity' );
-	?>
 
 
 	<button type="submit" class="single_add_to_cart_button button alt btn btn-block py-3 hvr-shutter-out-horizontal"><i class="fas fa-shopping-cart"></i> <?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>

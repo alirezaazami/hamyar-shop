@@ -254,3 +254,26 @@ $('.slider3').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
+
+$('body').on('click','#quantity_changer .fa-plus-circle',function (){
+  let input=$(this).parent().find('input');
+  let qty=parseInt(input.val());
+  let max=parseInt(input.attr('max'));
+  let step=parseInt(input.attr('step'));
+  if (qty >= max) return;
+  if (qty+step > max) return;
+  input.val(qty+step);
+  $('[name="update_cart"]').removeAttr('disabled').trigger('click');
+})
+$('body').on('click','#quantity_changer .fa-minus-circle',function (){
+  let input=$(this).parent().find('input');
+  let qty=parseInt(input.val());
+  let min=parseInt(input.attr('min'));
+  let step=parseInt(input.attr('step'));
+  if (qty <= min) return;
+  if (qty - step < min) return;
+  input.val(qty - step);
+
+  $('[name="update_cart"]').removeAttr('disabled').trigger('click');
+
+})

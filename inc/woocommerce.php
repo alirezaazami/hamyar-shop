@@ -32,3 +32,10 @@ function hamyar_shop_other_product_review(){
 
 remove_action('woocommerce_before_shop_loop','woocommerce_output_all_notices',10);
 add_action('hamyar_shop_header_notice','woocommerce_output_all_notices',10);
+
+add_action('woocommerce_before_add_to_cart_quantity',function (){
+    echo '<div id="quantity_changer"> <i class="fas fa-plus-circle"></i>';
+});
+add_action('woocommerce_after_add_to_cart_quantity',function (){
+    echo '<i class="fas fa-minus-circle"></i></div>';
+});
