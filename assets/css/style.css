@@ -31,13 +31,13 @@ body{
     position: relative;
 }
 
-.header-top .register a {
+.header-top .register>a,span.minicart_menu {
     font-size: 14px;
     position: relative;
     z-index: 1;
     color: #6164a3;
 }
-.register a::before {
+.register >a::before,span.minicart_menu::before {
     content: "";
     position: absolute;
     top: 0;
@@ -50,7 +50,7 @@ body{
     z-index: -1;
     color: #fff;
 }
-.register a:last-child::before {
+span.minicart_menu::before {
     content: "";
     position: absolute;
     top: 0;
@@ -63,7 +63,7 @@ body{
     z-index: -1;
     color: #fff;
 }
-.register a:hover::before {
+.register >a:hover::before,span.minicart_menu:hover::before {
     width: 100%;
     border-radius: 6px;
 }

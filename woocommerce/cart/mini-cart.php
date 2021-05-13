@@ -55,7 +55,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 					<?php if ( empty( $product_permalink ) ) : ?>
 						<?php echo $thumbnail . wp_kses_post( $product_name ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					<?php else : ?>
-						<a href="<?php echo esc_url( $product_permalink ); ?>">
+						<a class="minicart-product-item" href="<?php echo esc_url( $product_permalink ); ?>">
 							<?php echo $thumbnail . wp_kses_post( $product_name ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 						</a>
 					<?php endif; ?>
