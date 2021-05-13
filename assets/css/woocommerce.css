@@ -368,14 +368,15 @@ span.minicart_menu:hover #hamyar-shop-minicart{
 }
 #hamyar-shop-minicart a.checkout {
     float: left;
-    background: #08d608;
-    color: white;
+    background-color: #08d608!important;
+    color: white!important;
 }
 .woocommerce-mini-cart img{
     max-width: 100px;
     height: auto;
 }
 .woocommerce-mini-cart a{
+    line-height: 2;
     color: gray;
     margin: 5px;
     display: inline-block!important;
@@ -389,11 +390,55 @@ span.minicart_menu:hover #hamyar-shop-minicart{
     float: left;
     line-height: 28px!important;
 }
-.woocommerce ul.cart_list, .woocommerce ul.product_list_widget {
+#hamyar-shop-minicart ul.cart_list, #hamyar-shop-minicart ul.product_list_widget {
 list-style: none outside;
 padding: 0;
 margin: 0;
 max-width: 300px;
+}
+#hamyar-shop-minicart img {
+    margin-right: 4px;
+    width: 32px;
+    height: auto;
+    box-shadow: none;
+    float: right;
+}
+#hamyar-shop-minicart a.remove {
+    display: block;
+    height: 1em;
+    width: 1em;
+    text-align: center;
+    line-height: 1;
+    border-radius: 100%;
+    color: red!important;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 700;
+    border: 0;
+}
+#hamyar-shop-minicart a.remove:hover {
+    color: white!important;
+    background: red!important;
+}
+#hamyar-shop-minicart a.button {
+    font-size: 100%;
+    margin: 0;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    overflow: visible;
+    padding: .618em 1em;
+    font-weight: 700;
+    border-radius: 3px;
+    right: auto;
+    color: #515151;
+    background-color: #ebe9eb;
+    border: 0;
+    display: inline-block;
+    background-image: none;
+    box-shadow: none;
+    text-shadow: none;
 }
 /*end woocommerce cart page style*/
 
