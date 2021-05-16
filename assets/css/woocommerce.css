@@ -440,7 +440,65 @@ max-width: 300px;
     box-shadow: none;
     text-shadow: none;
 }
+
 /*end woocommerce cart page style*/
+/*start woocommerce checkout page style*/
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2,
+.woocommerce .col2-set .col-1,
+.woocommerce-page .col2-set .col-1{
+    flex: initial;
+    max-width: initial;
+}
+.woocommerce form .form-row{
+    display: initial;
+}
+.rtl .woocommerce .col2-set .col-1, .rtl,.rtl .woocommerce .col2-set .col-2{
+    float: none;
+    min-width:100%;
+}
+.woocommerce-checkout .woocommerce-billing-fields{
+    width:50%;
+    float: right;
+}
+.woocommerce-checkout .woocommerce-shipping-fields{
+    width:50%;
+    float: right;
+}
+.woocommerce-error, .woocommerce-info, .woocommerce-message{
+    background: white;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+
+}
+.form-row.place-order{
+    display: block;
+}
+form.woocommerce-checkout{
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+.select2-selection.select2-selection--single {
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/*end woocommerce checkout page style*/
 
 
 @media all and (max-width: 500px) {
