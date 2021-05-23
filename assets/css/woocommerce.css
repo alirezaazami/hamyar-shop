@@ -520,6 +520,9 @@ textarea,
     margin-right: -15px;
     margin-left: -15px;
 }
+.woocommerce-MyAccount-navigation-link.is-active {
+    background-color: rgba(83, 96, 157,0.15);
+}
 
 @media all and (max-width: 500px) {
     .woocommerce-page div.product div.images,

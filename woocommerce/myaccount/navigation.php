@@ -18,25 +18,13 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-add_filter('woocommerce_account_menu_items',function ($items, $endpoints ){
-       $items['dashboard']='<i class="fas fa-user align-middle ml-2"></i>'. $items['dashboard'];
-		$items['orders']='<i class="fas fa-shopping-cart align-middle ml-2"></i>'.$items['orders'];
-		$items['edit-address']='<i class="fas fa-map-marked align-middle ml-2"></i>'.$items['edit-address'];
-		$items['edit-account']='<i class="fas fa-info align-middle ml-2"></i>'.$items['edit-account'];
-		$items['favourite']='<i class="fas fa-heart align-middle ml-2"></i>'.esc_html__('my favourite','hamyar');
-//		$items['customer-logout']=''.$items['customer-logout'];
-    unset($items['downloads']);
-    unset($items['payment-methods']);
-    unset($items['customer-logout']);
-    return $items;
-},10,2);
-do_action( 'woocommerce_before_account_navigation' );
+
 ?>
 <div class="col-12 col-lg-3">
     <div class="card border-0 mb-4 profile">
         <div class="card-body text-center">
-            <img src="img/Group 1143.png" class="img-fluid mx-auto d-block">
-            <small class="d-block mt-3" style="font-size: 15px;font-weight: 700;">  امیر دینی </small>
+            <?php action_woocommerce_edit_account_form(); ?>
+            <small class="d-block mt-3" style="font-size: 15px;font-weight: 700;"> <?php echo wp_get_current_user()->display_name ?> </small>
         </div>
         <div class="card-footer d-flex justify-content-between align-items-center border-0 shadow-none py-2">
             <a href="<?php echo esc_url( wc_get_account_endpoint_url( get_option( 'woocommerce_myaccount_edit_address_endpoint', 'edit-address' ) ) ); ?>" class="border-left pl-4" style="margin-right: 30px;"> تغییر رمز </a>
