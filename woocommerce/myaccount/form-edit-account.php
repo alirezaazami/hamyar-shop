@@ -43,6 +43,14 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
 		<label for="account_email"><?php esc_html_e( 'Email address', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
 		<input type="email" class="woocommerce-Input woocommerce-Input--email input-text" name="account_email" id="account_email" autocomplete="email" value="<?php echo esc_attr( $user->user_email ); ?>" />
 	</p>
+    
+	<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+		<label><?php esc_html_e( 'your sex', 'hamyar' ); ?>&nbsp;</label>
+        <select name="sex" id="">
+            <option value="man"><?php esc_html_e('man','hamyar'); ?></option>
+            <option value="woman"><?php esc_html_e('woman','hamyar'); ?></option>
+        </select>
+    </p>
 
 	<fieldset>
 		<legend><?php esc_html_e( 'Password change', 'woocommerce' ); ?></legend>

@@ -498,13 +498,17 @@ textarea,
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.woocommerce-table,.woocommerce-thankyou-order-details,.woocommerce-customer-details address{
+.woocommerce-table,.woocommerce-thankyou-order-details,.woocommerce-customer-details address,.woocommerce-EditAccountForm.edit-account{
     background: white;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     padding: 20px!important;
 }
 /*end woocommerce checkout page style*/
 
+.woocommerce-EditAccountForm.edit-account input,.woocommerce-EditAccountForm.edit-account select{
+    border-radius: 10px;
+    border:1px solid #dbdbdb;
+}
 
 @media all and (max-width: 500px) {
     .woocommerce-page div.product div.images,

@@ -4,10 +4,12 @@ register_post_type
 do_shortcode
 remove_action
 do_action
+update_user_meta
+get_user_meta
 
 hooks
 ----------------------
-
+wp_login
 
 plugins
 -----------------------------
