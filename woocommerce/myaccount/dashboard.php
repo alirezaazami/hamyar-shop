@@ -20,42 +20,49 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-
-$allowed_html = array(
-	'a' => array(
-		'href' => array(),
-	),
-);
 ?>
 
-<p>
-	<?php
-	printf(
-		/* translators: 1: user display name 2: logout url */
-		wp_kses( __( 'Hello %1$s (not %1$s? <a href="%2$s">Log out</a>)', 'woocommerce' ), $allowed_html ),
-		'<strong>' . esc_html( $current_user->display_name ) . '</strong>',
-		esc_url( wc_logout_url() )
-	);
-	?>
-</p>
-
-<p>
-	<?php
-	/* translators: 1: Orders URL 2: Address URL 3: Account URL. */
-	$dashboard_desc = __( 'From your account dashboard you can view your <a href="%1$s">recent orders</a>, manage your <a href="%2$s">billing address</a>, and <a href="%3$s">edit your password and account details</a>.', 'woocommerce' );
-	if ( wc_shipping_enabled() ) {
-		/* translators: 1: Orders URL 2: Addresses URL 3: Account URL. */
-		$dashboard_desc = __( 'From your account dashboard you can view your <a href="%1$s">recent orders</a>, manage your <a href="%2$s">shipping and billing addresses</a>, and <a href="%3$s">edit your password and account details</a>.', 'woocommerce' );
-	}
-	printf(
-		wp_kses( $dashboard_desc, $allowed_html ),
-		esc_url( wc_get_endpoint_url( 'orders' ) ),
-		esc_url( wc_get_endpoint_url( 'edit-address' ) ),
-		esc_url( wc_get_endpoint_url( 'edit-account' ) )
-	);
-	?>
-</p>
-
+    <div class="col-12 col-lg-9">
+        <div class="card border-0 profile-side">
+            <div class="card-header bg-transparent border-0 pt-0">
+                <p class="mb-0 px-2 py-1"> اطلاعات شخصی </p>
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-3 info-user">
+                    <div>
+                        <p class="mb-1"> نام و نام خانوادگی : </p>
+                        <p class="mb-0"> <?php echo $current_user->display_name ?></p>
+                    </div>
+                    <div>
+                        <p class="mb-1"> پست الکترونیکی : </p>
+                        <p class="mb-0"> <?php echo $current_user->user_email ?> </p>
+                    </div>
+                    <div>
+                        <p class="mb-1"> شماره تلفن : </p>
+                        <p class="mb-0"> <?php echo get_user_meta(get_current_user_id(),'billing_phone',true) ?> </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center info-user">
+                    <div>
+                        <p class="mb-1"> جنسیت :  </p>
+                        <p class="mb-0">  <?php echo get_user_meta(get_current_user_id(),'sex',true) ?>  </p>
+                    </div>
+                    <div>
+                        <p class="mb-1">  تاریخ عضویت :</p>
+                        <?php $user_register=strtotime($current_user->user_registered); ?>
+                        <p class="mb-0"> <?php echo date('Y/m/d',$user_register); ?> </p>
+                    </div>
+                    <div>
+                        <p class="mb-1"> تاریخ آخرین ورود : </p>
+                        <p class="mb-0"><?php echo date('Y/m/d',get_user_meta(get_current_user_id(),'last_login_time',true)); ?> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer border-0 py-3 text-center info-user-footer">
+                <a href="<?php echo wc_customer_edit_account_url() ?>">  <i class="fas fa-pencil-alt align-middle ml-1"></i>  ویرایش اطلاعات شخصی </a>
+            </div>
+        </div>
+    </div>
 <?php
 	/**
 	 * My Account dashboard.
