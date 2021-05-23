@@ -498,7 +498,7 @@ textarea,
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.woocommerce-table,.woocommerce-thankyou-order-details,.woocommerce-customer-details address{
+.woocommerce-table,.woocommerce-thankyou-order-details,.woocommerce-customer-details address,#short_order_description{
     background: white;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     padding: 20px!important;
@@ -512,6 +512,7 @@ textarea,
 .edit-address .form-row{
     display: block!important;
 }
+
 
 @media all and (max-width: 500px) {
     .woocommerce-page div.product div.images,

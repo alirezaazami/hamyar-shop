@@ -22,8 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-    <input type="text" class="example1" />
-    <div class="col-12 col-lg-9">
         <div class="card border-0 profile-side">
             <div class="card-header bg-transparent border-0 pt-0">
                 <p class="mb-0 px-2 py-1"> اطلاعات شخصی </p>
@@ -63,7 +61,6 @@ if ( ! defined( 'ABSPATH' ) ) {
                 <a href="<?php echo wc_customer_edit_account_url() ?>">  <i class="fas fa-pencil-alt align-middle ml-1"></i>  ویرایش اطلاعات شخصی </a>
             </div>
         </div>
-    </div>
 <?php
 	/**
 	 * My Account dashboard.
