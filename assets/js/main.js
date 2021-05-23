@@ -1,4 +1,13 @@
 var $=jQuery;
+$('document').ready(function (){
+  $('.show_date_picker').on('focus',function (){
+    $(this).persianDatepicker({
+      format: 'YYYY/MM/DD',
+      autoClose: true
+    });
+  })
+});
+
 $('.slider22').slick({
   nextArrow:'.next4',
   prevArrow:'.prev4',

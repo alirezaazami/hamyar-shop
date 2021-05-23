@@ -51,6 +51,10 @@ do_action( 'woocommerce_before_edit_account_form' ); ?>
             <option value="woman"><?php esc_html_e('woman','hamyar'); ?></option>
         </select>
     </p>
+	<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+		<label><?php esc_html_e( 'your birthday', 'hamyar' ); ?>&nbsp;</label>
+        <input class="show_date_picker" type="text" name="birthday" value="<?php echo get_user_meta(get_current_user_id(),'birthday',true) ?>">
+    </p>
 
 	<fieldset>
 		<legend><?php esc_html_e( 'Password change', 'woocommerce' ); ?></legend>

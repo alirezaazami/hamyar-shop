@@ -7,3 +7,7 @@ add_action('woocommerce_save_account_details',function ($user_id){
     $sex=$_POST['sex'];
     add_user_meta($user_id,'sex',$sex);
 });
+add_action('woocommerce_save_account_details',function ($user_id){
+    $birthday=$_POST['birthday'];
+    add_user_meta($user_id,'birthday',$birthday);
+});

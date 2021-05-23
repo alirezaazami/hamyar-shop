@@ -22,6 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
+    <input type="text" class="example1" />
     <div class="col-12 col-lg-9">
         <div class="card border-0 profile-side">
             <div class="card-header bg-transparent border-0 pt-0">
@@ -53,8 +54,8 @@ if ( ! defined( 'ABSPATH' ) ) {
                         <p class="mb-0"> <?php echo date('Y/m/d',$user_register); ?> </p>
                     </div>
                     <div>
-                        <p class="mb-1"> تاریخ آخرین ورود : </p>
-                        <p class="mb-0"><?php echo date('Y/m/d',get_user_meta(get_current_user_id(),'last_login_time',true)); ?> </p>
+                        <p class="mb-1"> تاریخ تولد : </p>
+                        <p class="mb-0"><?php echo get_user_meta(get_current_user_id(),'birthday',true); ?> </p>
                     </div>
                 </div>
             </div>

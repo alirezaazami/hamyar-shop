@@ -54,6 +54,9 @@ function hamyar_shop_add_theme_style(){
         wp_enqueue_style('bootstrap-rtl',get_theme_file_uri('/assets/css/bootstrap-rtl.css'),['bootstrap'],'4.3.1');
     }
     wp_enqueue_style('style',get_theme_file_uri('/assets/css/style.css'),['bootstrap'],HAMYAR_SHOP_VERSION);
+
+    wp_enqueue_style('date-picker',get_theme_file_uri('/assets/package/date-picker/persian-datepicker.min.css'),[],'1.2.0');
+
 }
 
 add_action( 'wp_enqueue_scripts', 'hamyar_shop_add_theme_style' );
@@ -68,6 +71,11 @@ function hamyar_shop_add_theme_scripts() {
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
+
+//    http://babakhani.github.io/PersianWebToolkit/doc/datepicker/example/
+    wp_enqueue_script('persian-date',get_theme_file_uri('/assets/package/date-picker/persian-date.min.js'),['jquery'],'1.1.0',true);
+    wp_enqueue_script('persian-date-picker',get_theme_file_uri('/assets/package/date-picker/persian-datepicker.min.js'),['persian-date'],'1.1.0',true);
+
 }
 
 add_action( 'wp_enqueue_scripts', 'hamyar_shop_add_theme_scripts' );
