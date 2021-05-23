@@ -512,7 +512,14 @@ textarea,
 .edit-address .form-row{
     display: block!important;
 }
-
+.woocommerce-account .container>.row>.woocommerce{
+    width: 100%!important;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
 @media all and (max-width: 500px) {
     .woocommerce-page div.product div.images,

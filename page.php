@@ -3,12 +3,15 @@ get_header();
 ?>
 <main>
     <div class="container my-5">
-        <?php if (have_posts()):while(have_posts()):the_post();
-        the_content();
-        endwhile;
-        endif;
+        <div class="row">
+            <?php if (have_posts()):while(have_posts()):the_post();
+                the_content();
+            endwhile;
+            endif;
 
-        ?>
+            ?>
+        </div>
+        <!-- /.row -->
     </div>
 </main>
 <!-- End Main -->
