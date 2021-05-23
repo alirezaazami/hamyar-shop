@@ -50,27 +50,40 @@ $col    = 1;
 	<div class="u-columns woocommerce-Addresses col2-set addresses">
 <?php endif; ?>
 
-<?php foreach ( $get_addresses as $name => $address_title ) : ?>
-	<?php
-		$address = wc_get_account_formatted_address( $name );
-		$col     = $col * -1;
-		$oldcol  = $oldcol * -1;
-	?>
+<?php
+$address = wc_get_account_formatted_address();
+$customer = new WC_Customer( get_current_user_id() );
+$customer_address=$customer->get_billing();
+?>
+    <div class="card border-0 address">
+        <div class="card-header bg-transparent border-0 pt-0">
+            <p class="mb-0 px-2 py-1"> آدرس  </p>
+        </div>
+        <div class="card-body">
+            <p class="mb-0 text-center"> <strong> نمایش کامل آدرس : </strong>
+                <?php echo str_replace('<br/>',',' ,$address); ?>
+            </p><table class="table table-borderless table-striped text-center table-responsive-md">
+                <thead>
+                <tr>
+                    <th> استان : </th>
+                    <th> آدرس : </th>
+                    <th> کد پستی : </th>
+                    <th> عملیات : </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td> <?php echo $customer_address['city'] ?> </td>
+                    <td> <?php echo $customer_address['address_1'] ?> </td>
+                    <td> <?php echo $customer_address['postcode'] ?> </td>
+                    <td><a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', 'billing' ) ); ?>" class="edit"><?php echo $address ? esc_html__( 'Edit', 'woocommerce' ) : esc_html__( 'Add', 'woocommerce' ); ?></a>
+                    </td>
 
-	<div class="u-column<?php echo $col < 0 ? 1 : 2; ?> col-<?php echo $oldcol < 0 ? 1 : 2; ?> woocommerce-Address">
-		<header class="woocommerce-Address-title title">
-			<h3><?php echo esc_html( $address_title ); ?></h3>
-			<a href="<?php echo esc_url( wc_get_endpoint_url( 'edit-address', $name ) ); ?>" class="edit"><?php echo $address ? esc_html__( 'Edit', 'woocommerce' ) : esc_html__( 'Add', 'woocommerce' ); ?></a>
-		</header>
-		<address>
-			<?php
-				echo $address ? wp_kses_post( $address ) : esc_html_e( 'You have not set up this type of address yet.', 'woocommerce' );
-			?>
-		</address>
-	</div>
-
-<?php endforeach; ?>
-
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 <?php if ( ! wc_ship_to_billing_address_only() && wc_shipping_enabled() ) : ?>
 	</div>
 	<?php
