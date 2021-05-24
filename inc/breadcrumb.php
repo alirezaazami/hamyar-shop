@@ -29,7 +29,7 @@ function get_breadcrumb() {
         echo the_title();
         echo '</span>';
     } elseif (is_search()) {
-        echo "&nbsp;&nbsp;/;&nbsp;&nbsp;".esc_html__('Search Results for...','hamyar');
+        echo "&nbsp;&nbsp;/&nbsp;&nbsp;".esc_html__('Search Results for...','hamyar');
         echo '"<span>';
         echo the_search_query();
         echo '</span>"';
