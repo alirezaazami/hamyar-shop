@@ -14,6 +14,7 @@ require_once get_theme_file_path('inc/custom_post_type.php');
 require_once get_theme_file_path('inc/meta_box.php');
 require_once get_theme_file_path('inc/woocommerce.php');
 require_once get_theme_file_path('inc/dashboard.php');
+require_once get_theme_file_path('inc/register.php');
 
 /**
  * First, let's set the maximum content width based on the theme's design and stylesheet.
