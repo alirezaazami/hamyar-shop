@@ -1,3 +1,9 @@
+<?php
+/**
+ * template name: font page 1
+ */
+
+?>
 <?php   get_header(); ?>
 
     <!-- Start Main -->
