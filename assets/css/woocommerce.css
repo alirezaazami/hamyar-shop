@@ -505,6 +505,7 @@ textarea,
 }
 /*end woocommerce checkout page style*/
 
+/*start woocommerce my account page style*/
 .woocommerce-EditAccountForm.edit-account input,.woocommerce-EditAccountForm.edit-account select{
     border-radius: 10px;
     border:1px solid #dbdbdb;
@@ -526,6 +527,117 @@ textarea,
 .width-100{
     width: 100%!important;
 }
+/*end woocommerce my account page style*/
+
+/*start woocommerce home slider page*/
+.product_slider{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    overflow: hidden;
+}
+.product_slider .product>.card{
+    border-radius: 15px!important;
+    overflow: hidden;
+}
+.product_slider .product a img {
+    width: 100%;
+    display: block;
+    margin:initial;
+    box-shadow: none;
+    height: 14em !important;
+    clip-path: ellipse(275px 177px at 50% 15%);
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+.product_slider .product .woocommerce-loop-product__title{
+    text-align: center;
+}
+
+.product_slider .product .button {
+    margin-top: 0px;
+    background: initial;
+    /* color: black; */
+    color: #53609D;
+    font-size: 16px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.product_slider  .product .added_to_cart  {
+    margin-top: 10px;
+    background: #ff0000;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 5px 10px;
+    display: inline-block;
+}
+.product_slider .product:hover .button {
+    background-color: #44bd32;
+    color: #fff;
+}
+
+.product_slider .product .price {
+    color: gray;
+    font-weight: 400;
+    margin-bottom: .5em;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.product_slider .product .price .woocommerce-Price-amount {
+    color: red;
+}
+.product_slider .product .price del .woocommerce-Price-amount {
+    color: gray;
+}
+.product_slider  .product .onsale{
+    margin: .5em 0 0 .5em;
+}
+.product_slider  h2{
+    font-size: 15px;
+}
+.product_slider  .onsale{
+    position: absolute;
+    z-index: 1;
+    background: red;
+    border-radius: 50%;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    right: 3px;
+}
+.product_slider .add_to_cart_button{
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+}
+.product_slider .add_to_cart_button.loading{
+    opacity: .25;
+    padding-left: 2.618em;
+}
+.product_slider .add_to_cart_button.loading:after{
+    font-family: WooCommerce;
+    content: "\e01c";
+    vertical-align: top;
+    font-weight: 400;
+    position: absolute;
+    top: .618em;
+    left: 1em;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+/*end woocommerce home slider page*/
+
+
 @media all and (max-width: 500px) {
     .woocommerce-page div.product div.images,
     .woocommerce div.product div.images{
