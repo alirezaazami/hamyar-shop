@@ -39,3 +39,7 @@ add_action('woocommerce_before_add_to_cart_quantity',function (){
 add_action('woocommerce_after_add_to_cart_quantity',function (){
     echo '<i class="fas fa-minus-circle"></i></div>';
 });
+
+add_filter('woocommerce_registration_error_email_exists',function (){
+    return sprintf(__('this email address is exist. please use login form. <a href="%s">login page</a>'),wc_get_account_endpoint_url('dashboard'));
+});

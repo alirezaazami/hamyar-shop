@@ -20,6 +20,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 do_action( 'woocommerce_before_customer_login_form' ); ?>
+<div class="row justify-content-center width-100">
+    <div class="col-12 col-lg-5">
         <div class="card border-0 login">
             <div class="card-body px-5">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/Group 1.png" class="img-fluid d-block" alt="hamyarmarket">
@@ -34,7 +36,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
                                 <small class="text-muted" style="font-weight:600;font-size: 14px;"> ایمیل </small>
                             </div>
                         </div>
-                        <input type="text" class="" name="username" id="username" autocomplete="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" /><?php // @codingStandardsIgnoreLine ?>
+                        <input type="text" class="form-control" name="username" id="username" autocomplete="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" /><?php // @codingStandardsIgnoreLine ?>
                     </div>
                     <div class="input-group my-4">
                         <div class="input-group-prepend">
@@ -42,7 +44,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
                                 <small class="text-muted" style="font-weight:600;font-size: 14px;"> رمز عبور </small>
                             </div>
                         </div>
-                        <input class="" type="password" name="password" id="password" autocomplete="current-password" />
+                        <input class="form-control" type="password" name="password" id="password" autocomplete="current-password" />
                     </div>
                     <?php do_action( 'woocommerce_login_form' ); ?>
                     <a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"> رمز عبور خود را فراموش کرده اید ؟! </a>
@@ -63,7 +65,9 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
             </div>
             <div class="card-footer border-0 d-flex justify-content-center align-items-center py-4">
                 <p class="mb-0 text-center ml-2" style="font-size: 16px;font-weight: 500;"> تاکنون ثبت نام نکرده اید ؟!   </p>
-                <a href="#" class="text-danger" style="font-size: 16px;font-weight: 600;"> ثبت نام در همیارمارکت </a>
+                <a href="<?php echo get_permalink(get_option('register_page_id')) ?>" class="text-danger" style="font-size: 16px;font-weight: 600;"> ثبت نام در همیارمارکت </a>
             </div>
         </div>
+    </div>
+</div>
 <?php do_action( 'woocommerce_after_customer_login_form' ); ?>
