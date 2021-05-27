@@ -1,1 +1,0 @@
-javascript:(function(){ var queryString = '?reload=' + new Date().getTime(); jQuery('link[rel="stylesheet"]').each(function () {if(this.href.includes("fonts.googleapis.com")){return;} this.href = this.href.replace(/\?.*|$/, queryString); }); })();
