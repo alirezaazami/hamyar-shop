@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-12 col-lg-3 text-center text-lg-right">
                     <h3 class="mb-0">
-                        <a href="#"> <img src="<?php echo get_template_directory_uri() ?>/assets/img/Group 1.png" class="img-fluid" alt="logo"> </a>
+                        <a href="#"> <img src="<?php echo hamyar_shop_get_option('logo')['url'] ?>" class="img-fluid" alt="logo"> </a>
                     </h3>
                 </div>
                 <div class="col-12 col-lg-6">

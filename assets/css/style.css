@@ -6,8 +6,8 @@ input::placeholder {
     font-size: 13px;
     font-weight: 300;
 }
-body{
-    font-family: Vazir;
+body,p{
+    font-family: Vazir!important;
 }
 .header-top .search-box input,select,textarea {
     box-shadow: none !important;
@@ -1357,4 +1357,10 @@ body.single-post .previous-post-link a
     border: none;
     text-align: center!important;
     padding: 6px;
+}
+
+#sub-footer-texts>*{
+    padding: 5px;
+    font-size: 14px;
+    min-width: 30%;
 }
