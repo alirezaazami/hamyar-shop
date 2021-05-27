@@ -10,31 +10,37 @@
                 </div>
                 <?php endforeach; ?>
             </div>
-            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center mt-3">
-                <a href="#" class="text-white">
+            <div class="d-flex flex-column flex-lg-row align-items-center mt-3">
+                <?php if (hamyar_shop_get_option('enable-telegram')==='1'): ?>
+                <a href="<?php echo hamyar_shop_get_option('telegram-url') ?>" class="text-white">
                     <div class="card border-0 massengers1">
                         <div class="card-body d-flex align-items-center py-2">
                             <span class="text-white"><i class="fab fa-telegram-plane fa-2x"></i> </span>
-                            <p class="mb-0 mr-1 text-white" style="font-size: 15px;"> تلگرام همیار مارکت </p>
+                            <p class="mb-0 mr-1 text-white" style="font-size: 15px;">  <?php echo hamyar_shop_get_option('telegram-text') ?> </p>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="text-white">
+                <?php endif; ?>
+                <?php if (hamyar_shop_get_option('enable-instagram')==='1'): ?>
+                <a href="<?php echo hamyar_shop_get_option('intagram-url') ?>" class="text-white" target="_blank">
                     <div class="card border-0 massengers2 mx-lg-3 my-3 my-lg-0">
                         <div class="card-body d-flex align-items-center py-2">
                             <span class="text-white"><i class="fab fa-instagram fa-2x"></i> </span>
-                            <p class="mb-0 mr-1 text-white" style="font-size: 15px;"> اینستاگرام همیار مارکت </p>
+                            <p class="mb-0 mr-1 text-white" style="font-size: 15px;"> <?php echo hamyar_shop_get_option('intagram-text') ?></p>
                         </div>
                     </div>
                 </a>
-                <a href="#" class="text-white">
+                <?php endif; ?>
+                <?php if (hamyar_shop_get_option('enable-whatsapp')==='1'): ?>
+                <a href="<?php echo hamyar_shop_get_option('whatsapp-url') ?>" class="text-white">
                     <div class="card border-0 massengers3">
                         <div class="card-body d-flex align-items-center py-2">
                             <span class="text-white"><i class="fab fa-whatsapp fa-2x"></i> </span>
-                            <p class="mb-0 mr-1 text-white" style="font-size: 15px;"> واتساپ همیار مارکت </p>
+                            <p class="mb-0 mr-1 text-white" style="font-size: 15px;">  <?php echo hamyar_shop_get_option('whatsapp-text') ?> </p>
                         </div>
                     </div>
                 </a>
+                <?php endif; ?>
             </div>
         </div>
         <div class="col-12 col-lg-4">

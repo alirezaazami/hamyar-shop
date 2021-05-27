@@ -259,10 +259,87 @@ Redux::set_section(
                 ),
             ),
             array(
+                'id'   => 'divider-1',
+                'type' => 'divide',
+            ),
+            array(
                 'id'       => 'footer-multi-text',
                 'type'     => 'multi_text',
                 'title'    => esc_html__( 'add footer sub text', 'hamyar' ),
                 'desc'     => esc_html__( 'this items is show under top text', 'hamyar' ),
+            ),
+            array(
+                'id'   => 'divide-2',
+                'type' => 'divide',
+            ),
+            array(
+                'id'       => 'enable-instagram',
+                'type'     => 'switch',
+                'title'    => esc_html__( 'enable instagram', 'hamyar' ),
+                'subtitle' => wp_kses_post( __( 'Click <code>On</code> to show instagram on footer', 'hamyar' ) ),
+                'default'  => false,
+            ),
+            array(
+                'id'       => 'intagram-url',
+                'type'     => 'text',
+                'title'    => esc_html__( 'instagram address', 'hamyar' ),
+                'required' => array( 'enable-instagram', '=', true ),
+            ),
+            array(
+                'id'       => 'intagram-text',
+                'type'     => 'text',
+                'title'    => esc_html__( 'instagram text', 'hamyar' ),
+                'required' => array( 'enable-instagram', '=', true ),
+            ),
+            array(
+                'id'   => 'divide-3',
+                'type' => 'divide',
+            ),
+            array(
+                'id'       => 'enable-telegram',
+                'type'     => 'switch',
+                'title'    => esc_html__( 'enable telegram', 'hamyar' ),
+                'subtitle' => wp_kses_post( __( 'Click <code>On</code> to show telegram on footer', 'hamyar' ) ),
+                'default'  => false,
+            ),
+            array(
+                'id'       => 'telegram-url',
+                'type'     => 'text',
+                'title'    => esc_html__( 'telegram address', 'hamyar' ),
+                'required' => array( 'enable-telegram', '=', true ),
+            ),
+            array(
+                'id'       => 'telegram-text',
+                'type'     => 'text',
+                'title'    => esc_html__( 'telegram text', 'hamyar' ),
+                'required' => array( 'enable-telegram', '=', true ),
+            ),
+            array(
+                'id'   => 'divide-4',
+                'type' => 'divide',
+            ),
+            array(
+                'id'       => 'enable-whatsapp',
+                'type'     => 'switch',
+                'title'    => esc_html__( 'enable whatsapp', 'hamyar' ),
+                'subtitle' => wp_kses_post( __( 'Click <code>On</code> to show whatsapp on footer', 'hamyar' ) ),
+                'default'  => false,
+            ),
+            array(
+                'id'       => 'whatsapp-url',
+                'type'     => 'text',
+                'title'    => esc_html__( 'whatsapp address', 'hamyar' ),
+                'required' => array( 'enable-whatsapp', '=', true ),
+            ),
+            array(
+                'id'       => 'whatsapp-text',
+                'type'     => 'text',
+                'title'    => esc_html__( 'whatsapp text', 'hamyar' ),
+                'required' => array( 'enable-whatsapp', '=', true ),
+            ),
+            array(
+                'id'   => 'divide-4',
+                'type' => 'divide',
             ),
         )
     )
