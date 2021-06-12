@@ -1212,6 +1212,7 @@ body.single-post .previous-post-link a
     transition: 0.3s;
     padding: .25rem 1rem;
     border-radius: 50rem;
+    display: inline-block;
     background-color: #f8f9fa;
 
 }
