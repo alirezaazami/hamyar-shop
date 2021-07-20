@@ -10,6 +10,15 @@ function hamyar_shop_comment_callback($comment, $args, $depth){
                     <small class="text-muted">  در تاریخ  <?php echo get_comment_date(); ?> این دیدگاه ارسال شده :  </small>
                 </div>
             </div>
+            <?php
+            if ( '0' === $comment->comment_approved ) { ?>
+                <p class="meta">
+                    <em class="woocommerce-review__awaiting-approval">
+                        <?php esc_html_e( 'Your review is awaiting approval', 'woocommerce' ); ?>
+                    </em>
+                </p>
+            <?php }
+            ?>
             <?php  comment_text(); ?>
             <?php
             comment_reply_link(

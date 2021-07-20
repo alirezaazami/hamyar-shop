@@ -5,11 +5,11 @@ add_action('wp_login',function ($userdata,$user){
 
 add_action('woocommerce_save_account_details',function ($user_id){
     $sex=$_POST['sex'];
-    add_user_meta($user_id,'sex',$sex);
+    update_user_meta($user_id,'sex',$sex);
 });
 add_action('woocommerce_save_account_details',function ($user_id){
     $birthday=$_POST['birthday'];
-    add_user_meta($user_id,'birthday',$birthday);
+    update_user_meta($user_id,'birthday',$birthday);
 });
 
 add_action( 'init', 'hamyar_shop_add_menu_to_dashboard' );
