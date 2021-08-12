@@ -17,6 +17,7 @@ require_once get_theme_file_path('inc/dashboard.php');
 require_once get_theme_file_path('inc/register.php');
 require_once get_theme_file_path('inc/woocommerce_loop.php');
 require_once get_theme_file_path('inc/option-panel.php');
+require_once get_theme_file_path('inc/shortcodes.php');
 require_once get_theme_file_path('tgm/hamyar.php');
 
 /**
