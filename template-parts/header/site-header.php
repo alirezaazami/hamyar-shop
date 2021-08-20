@@ -23,7 +23,9 @@
                         <span  class="py-1 px-2 minicart_menu"> <i class="fas fa-shopping-cart align-middle ml-1"></i>
                             سبد خرید
                             <div id="hamyar-shop-minicart">
-                                <?php woocommerce_mini_cart(); ?>
+                                <div class="widget_shopping_cart_content">
+                                    <?php woocommerce_mini_cart(); ?>
+                                </div>
                                 <div class="clearfix"></div>
                                 <!-- /.clearfix -->
                             </div>
