@@ -36,7 +36,15 @@ function hamyar_shop_get_top_sales_woocommerce_product_loop(){
         'meta_key'=>'total_sales',
         'orderby'=>'meta_value_num',
         'order'=>'DESC',
-        'posts_per_page'=>8
+        'posts_per_page'=>8,
+        'meta_query'    =>  array(
+            'relation '     => 'AND',
+            array(
+                'key'       => 'total_sales',
+                'value' => 0,
+                'compare'       => '>',
+            )
+        ),
     );
     $the_posts=new WP_Query($args);
     if ( $the_posts->have_posts() && $the_posts->found_posts >=4):
