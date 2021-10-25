@@ -513,7 +513,7 @@ textarea,
 .edit-address .form-row{
     display: block!important;
 }
-.woocommerce-account .container>.row>.woocommerce{
+.woocommerce-account .container>.row .woocommerce{
     width: 100%!important;
     display: flex;
     -ms-flex-wrap: wrap;
